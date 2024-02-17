@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mi página de prueba</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Reserva tu vuelo</a></li>
+                <li><a href="#">Ofertas y Destinos</a></li>
+                <li><a href="#">Check In</a></li>
+                <li><a href="#">Contactenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Bienvenido a AeroFaber Inc</h1>
+        <p>Esta es su pagina amiga, para saber todas las opciones que tiene y tener una experiencia unica, ademas
+            tenemos todas las facilidades para que viajes con tu mascota.</p>
+            <form id="flight-search-form">
+                <label for="origin">Origen:</label>
+                <input type="text" id="origin" placeholder="Ciudad de origen" required>
+        
+                <label for="destination">Destino:</label>
+                <input type="text" id="destination" placeholder="Ciudad de destino" required>
+        
+                <button type="button" onclick="searchFlights()">Buscar Vuelos</button>
+            </form>
+        
+            <div id="flight-results"></div>
+            <!-- Nuevo contenedor para mostrar información del vuelo seleccionado -->
+            <div id="selected-flight"></div>
+
+            <!-- Nuevo contenedor para mostrar información del vuelo seleccionado -->
+    <div id="selected-flight"></div>
+    
+    <!-- Botón para reservar el vuelo -->
+    <button id="reserve-button" onclick="reserveFlight()">Reservar Vuelo</button>
+            
+    </main>
+    <h2>Hoteles aliados</h2>
+    <p>Hotel Capital</p>
+    <p>Hotel Marriot</p>
+    <p>Hotel Gianza</p>
+    <p>Hotel Hilton</p>
+    
+    <footer>
+        <p>&copy; 2024 AeroFaber. Todos los derechos reservados.</p>
+    </footer>
+<script src="index.js"></script>
+<button id="change-background" onclick="changeBackgroundColor()">Probar modo oscuro</button>
+
+  </body>
+</html>
