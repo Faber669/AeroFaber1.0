@@ -1,16 +1,32 @@
+<!--Faber Cordoba-->
 <!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8" />
     <title>Mi página de prueba</title>
     <link rel="stylesheet" href="index.css">
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <script type="module">
+        import React from 'https://unpkg.com/react@17/umd/react.development.js';
+        import ReactDOM from 'https://unpkg.com/react-dom@17/umd/react-dom.development.js';
+      
+        // Importar tu componente React
+        import App from './app.js';
+      
+        // Renderizar el componente en el contenedor con id "root"
+        ReactDOM.render(<App />, document.getElementById('root'));
+      </script>
+      
+
   </head>
   <body>
-    
+    <div id="root"></div>
     <header>
         <nav>
             <ul>
-                <li><a href="#">Reserva tu vuelo</a></li>
+                <li><a href="#">Reserva tu vuelo!</a></li>
                 <li><a href="#">Ofertas y Destinos</a></li>
                 <li><a href="#">Check In</a></li>
                 <li><a href="#">Contactenos</a></li>
@@ -18,7 +34,7 @@
         </nav>
     </header>
     <main>
-        <h1>Bienvenido a AeroFaber Inc</h1>
+        <h1>Bienvenido a AeroFaberjuan Inc</h1>
         <p>Esta es su pagina amiga, para saber todas las opciones que tiene y tener una experiencia unica, ademas
             tenemos todas las facilidades para que viajes con tu mascota.</p>
             <form id="flight-search-form">
@@ -42,11 +58,15 @@
     <button id="reserve-button" onclick="reserveFlight()">Reservar Vuelo</button>
             
     </main>
+<section>
     <h2>Hoteles aliados</h2>
+<ul>
     <p>Hotel Capital</p>
     <p>Hotel Marriot</p>
     <p>Hotel Gianza</p>
     <p>Hotel Hilton</p>
+</ul>
+</section>
     
     <footer>
         <p>&copy; 2024 AeroFaber. Todos los derechos reservados.</p>
